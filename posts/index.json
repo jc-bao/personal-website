@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "resources",
+    "title": "Learning & Control Resources Recommendation",
+    "date": "August 30, 2024",
+    "tag": "research",
+    "file": "posts/resources.md",
+    "summary": "A curated collection of learning resources for optimal control and reinforcement learning, organized from basics to advanced topics."
+  },
+  {
+    "slug": "hillbilly-elegy",
+    "title": "Hillbilly Elegy: a Memoir of a Family and Culture in Crisis",
+    "date": "August 9, 2024",
+    "tag": "reading",
+    "file": "posts/hillbilly-elegy.md",
+    "summary": "A personal review of J.D. Vance's memoir exploring hillbilly culture, intergenerational poverty, and the American Dream."
+  },
+  {
+    "slug": "missing-lesson",
+    "title": "Missing Lesson: How to Navigate Through a CS Research Project",
+    "date": "July 10, 2024",
+    "tag": "research",
+    "file": "posts/missing-lesson.md",
+    "summary": "A practical guide for CS researchers on identifying research problems and approaching them iteratively."
+  },
+  {
+    "slug": "mbd-tutorial",
+    "title": "Model-based Diffusion for Trajectory Optimization Tutorial",
+    "date": "July 1, 2024",
+    "tag": "research",
+    "file": "posts/mbd-tutorial.md",
+    "summary": "Tutorial introducing model-based diffusion planners that leverage physics models for trajectory generation without demonstration data."
+  },
+  {
+    "slug": "diffusion-tutorial",
+    "title": "Diffusion Model for Learning and Control Tutorial",
+    "date": "February 26, 2024",
+    "tag": "research",
+    "file": "posts/diffusion-tutorial.md",
+    "summary": "Comprehensive tutorial on diffusion models for robotics control, covering imitation learning, model-based RL, and offline RL."
+  }
+]
