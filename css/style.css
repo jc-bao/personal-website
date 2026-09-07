@@ -453,6 +453,18 @@ img {
   margin-bottom: 8px;
 }
 
+.pub-tldr {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.pub-tldr strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .pub-badge {
   display: inline-block;
   padding: 1px 8px;

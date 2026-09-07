@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaoyi Pan - Carnegie Mellon University</title>
-  <meta name="description" content="Chaoyi Pan is a PhD candidate in ECE at Carnegie Mellon University, researching physics-based robot data generation and generative models in control.">
+  <meta name="description" content="Chaoyi Pan is a 4th-year PhD student in ECE at Carnegie Mellon University, researching physics-based robot data generation and generative models in control.">
   <meta name="author" content="Chaoyi Pan">
   <meta property="og:title" content="Chaoyi Pan - Carnegie Mellon University">
-  <meta property="og:description" content="PhD candidate researching physics-based robot data generation and generative models in control.">
+  <meta property="og:description" content="4th-year PhD student researching physics-based robot data generation and generative models in control.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
   <script>
@@ -55,9 +55,9 @@
         </div>
         <div class="about-content">
           <h1 class="about-name">Chaoyi Pan</h1>
-          <p class="about-title">PhD Candidate, Carnegie Mellon University</p>
+          <p class="about-title">PhD Student, Carnegie Mellon University</p>
           <p class="about-bio">
-            I am a 3rd-year PhD candidate in
+            I am a 4th-year PhD student in
             <a href="https://www.ece.cmu.edu/" target="_blank" rel="noopener">Electrical and Computer Engineering</a>
             affiliated with the
             <a href="https://www.ri.cmu.edu" target="_blank" rel="noopener">Robotics Institute</a>
@@ -106,6 +106,24 @@
       <h2 class="section-title">News</h2>
       <ul class="news-list">
         <li>
+          <span class="news-date">Sep 2026</span>
+          <span class="news-content">
+            My UCLA ECE M237 guest lecture, <a href="https://www.youtube.com/watch?v=f2r97Jw5tHk" target="_blank" rel="noopener">Model-Based Diffusion for Trajectory Optimization and MPC</a>, is now online! Published September 3 by SCI Autonomy Lab; covers MBD, CoVO-MPC, and DIAL-MPC.
+          </span>
+        </li>
+        <li>
+          <span class="news-date">Aug 2026</span>
+          <span class="news-content">
+            <a href="https://arxiv.org/abs/2608.19443" target="_blank" rel="noopener">FS-MPC</a> is out! Hybrid feedback sampling for sample-efficient model predictive control.
+          </span>
+        </li>
+        <li>
+          <span class="news-date">May 2026</span>
+          <span class="news-content">
+            Our paper on <a href="https://arxiv.org/abs/2605.16520" target="_blank" rel="noopener">global convergence of sampling-based nonconvex optimization through diffusion-style smoothing</a> is out! We prove global convergence for annealed sampling-based optimization, providing a theoretical foundation for our <a href="https://lecar-lab.github.io/dial-mpc/" target="_blank" rel="noopener">DIAL-MPC</a> series of work.
+          </span>
+        </li>
+        <li>
           <span class="news-date">Dec 2025</span>
           <span class="news-content">
             <a href="https://simchowitzlabpublic.github.io/much-ado-about-noising-project/">Much Ado About Noising</a> is released! The first large-scale empirical study on generative control policies for behavior cloning.
@@ -143,7 +161,7 @@
   <section id="publications" class="section">
     <div class="container">
       <h2 class="section-title">Publications</h2>
-      <p class="pub-note">* denotes equal contribution.</p>
+      <p class="pub-note">* denotes equal contribution; &dagger; denotes equal advising.</p>
 
       <!-- Action Representation in Generative Control -->
       <h3 class="research-direction">Action Representation in Generative Control</h3>
@@ -157,6 +175,7 @@
             <h4 class="pub-title">Much Ado About Noising: Dispelling the Myths of Generative Robotic Control</h4>
             <p class="pub-authors"><span class="me">Chaoyi Pan</span>, Giri Anantharaman, Nai-Chieh Huang, Claire Jin, Daniel Pfrommer, Chenyang Yuan, Frank Permenter, Guannan Qu, Nicholas Boffi, Guanya Shi, Max Simchowitz</p>
             <p class="pub-venue">ICLR 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> Generative control policies benefit from supervised iterative refinement and suitable stochasticity. A simple two-step regression policy matches flow-based policies on behavior-cloning benchmarks, challenging explanations centered on multimodal action distributions.</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2512.01809" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/simchowitzlabpublic/much-ado-about-noising" target="_blank" rel="noopener">Code</a>
@@ -177,8 +196,9 @@
           </div>
           <div class="pub-info">
             <h4 class="pub-title">SPIDER: Scalable Physics-Informed Dexterous Retargeting</h4>
-            <p class="pub-authors"><span class="me">Chaoyi Pan</span>, Changhao Wang, Haozhi Qi, Ziqi Liu, Homanga Bharadhwaj, Akarsh Sharma, Tingfan Wu, Guanya Shi, Jitendra Malik, Francois Hogan</p>
-            <p class="pub-venue">arXiv 2025</p>
+            <p class="pub-authors"><span class="me">Chaoyi Pan</span>, Changhao Wang, Haozhi Qi, Zixi Liu, Homanga Bharadhwaj, Akash Sharma, Tingfan Wu, Guanya Shi&dagger;, Jitendra Malik, Francois Hogan</p>
+            <p class="pub-venue">IROS 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> SPIDER turns human motion demonstrations into physically feasible robot trajectories through physics-based sampling and contact guidance, scaling data generation across humanoids and dexterous hands.</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2511.09484" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/jc-bao/spider" target="_blank" rel="noopener">Code</a>
@@ -193,8 +213,9 @@
           </div>
           <div class="pub-info">
             <h4 class="pub-title">Model-Based Diffusion for Trajectory Optimization</h4>
-            <p class="pub-authors"><span class="me">Chaoyi Pan*</span>, Zeji Yi*, Guanya Shi, Guannan Qu</p>
+            <p class="pub-authors"><span class="me">Chaoyi Pan*</span>, Zeji Yi*, Guanya Shi&dagger;, Guannan Qu&dagger;</p>
             <p class="pub-venue">NeurIPS 2024</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> MBD uses known dynamics to compute diffusion scores and optimize trajectories without training data, while optionally incorporating imperfect demonstrations to guide solutions for contact-rich tasks.</p>
             <div class="pub-links">
               <a href="https://drive.google.com/file/d/1kPjD79Cfr9spWulWNVFMRHqTE-mjbGAp/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/LeCAR-Lab/model-based-diffusion" target="_blank" rel="noopener">Code</a>
@@ -211,12 +232,43 @@
 
         <div class="pub-entry">
           <div class="pub-thumb">
+            <img src="assets/pub/fs-mpc.png" alt="Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control overview" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <h4 class="pub-title">Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control</h4>
+            <p class="pub-authors"><span class="me">Chaoyi Pan</span>, Zeji Yi, John Zhang, Zachary Manchester, Guannan Qu, Guanya Shi</p>
+            <p class="pub-venue">arXiv 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> FS-MPC combines feedback-guided sampling with local and global search to improve sample efficiency and control unstable, contact-rich systems, including real humanoid locomotion and manipulation.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2608.19443" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-thumb">
+            <img src="assets/pub/global-convergence.png" alt="Global Convergence of Sampling-Based Nonconvex Optimization through Diffusion-Style Smoothing overview" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <h4 class="pub-title">Global Convergence of Sampling-Based Nonconvex Optimization through Diffusion-Style Smoothing</h4>
+            <p class="pub-authors">Zeji Yi*, <span class="me">Chaoyi Pan*</span>, Guanya Shi, Guannan Qu</p>
+            <p class="pub-venue">TMLR 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> We analyze sampling-based optimization through diffusion-style smoothing and develop DIDA, an annealed algorithm with a global convergence guarantee under the stated assumptions.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2605.16520" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-thumb">
             <img src="assets/pub/dial-mpc.png" alt="DIAL-MPC teaser" loading="lazy">
           </div>
           <div class="pub-info">
             <h4 class="pub-title">Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing</h4>
             <p class="pub-authors">Haoru Xue*, <span class="me">Chaoyi Pan*</span>, Zeji Yi, Guannan Qu, Guanya Shi</p>
             <p class="pub-venue">ICRA 2025 <span class="pub-badge">Best Paper Finalist</span></p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> DIAL-MPC uses diffusion-style annealing to refine sampled control trajectories, enabling real-time, training-free torque control with full quadruped dynamics, including precise real-world jumping with payloads.</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2409.15610" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/LeCAR-Lab/dial-mpc" target="_blank" rel="noopener">Code</a>
@@ -231,8 +283,9 @@
           </div>
           <div class="pub-info">
             <h4 class="pub-title">CoVO-MPC: Theoretical Analysis of Sampling-Based MPC and Optimal Covariance Design</h4>
-            <p class="pub-authors">Zeji Yi*, <span class="me">Chaoyi Pan*</span>, Guanqi He, Guannan Qu, Guanya Shi</p>
+            <p class="pub-authors">Zeji Yi*, <span class="me">Chaoyi Pan*</span>, Guanqi He, Guannan Qu&dagger;, Guanya Shi&dagger;</p>
             <p class="pub-venue">L4DC 2024</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> We analyze MPPI convergence and use the results to design an optimal sampling covariance schedule, improving sampling-based control in simulation and real-world agile quadrotor tasks.</p>
             <div class="pub-links">
               <a href="https://arxiv.org/abs/2401.07369" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/LeCAR-Lab/quadjax" target="_blank" rel="noopener">Code</a>
@@ -249,12 +302,64 @@
 
         <div class="pub-entry">
           <div class="pub-thumb">
+            <img src="assets/pub/softa.png" alt="Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control overview" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <h4 class="pub-title">Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control</h4>
+            <p class="pub-authors">Yitang Li, Yuanhang Zhang, Wenli Xiao, <span class="me">Chaoyi Pan</span>, Haoyang Weng, Guanqi He, Tairan He, Guanya Shi</p>
+            <p class="pub-venue">CoRL 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> SoFTA separates fast upper-body stabilization from slower locomotion control, helping humanoids keep their hands steady while walking, carrying nearly full cups, or recording video.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2505.24198" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/LeCAR-Lab/SoFTA" target="_blank" rel="noopener">Code</a>
+              <a href="https://lecar-lab.github.io/SoFTA/" target="_blank" rel="noopener">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-thumb">
+            <img src="assets/pub/mujoco-mpc.png" alt="Whole-Body Model-Predictive Control of Legged Robots with MuJoCo overview" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <h4 class="pub-title">Whole-Body Model-Predictive Control of Legged Robots with MuJoCo</h4>
+            <p class="pub-authors">John Z. Zhang, Taylor A. Howell, Zeji Yi, <span class="me">Chaoyi Pan</span>, Guanya Shi, Guannan Qu, Tom Erez, Yuval Tassa, Zachary Manchester</p>
+            <p class="pub-venue">ICRA 2026</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> A simple combination of iLQR, MuJoCo dynamics, and finite-difference derivatives enables real-time whole-body control of physical quadrupeds and humanoids with few sim-to-real adjustments.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2503.04613" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/johnzhang3/mujoco_mpc_deploy/tree/main" target="_blank" rel="noopener">Code</a>
+              <a href="https://johnzhang3.github.io/mujoco_ilqr/" target="_blank" rel="noopener">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-thumb">
+            <img src="assets/pub/asap.png" alt="ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills overview" loading="lazy">
+          </div>
+          <div class="pub-info">
+            <h4 class="pub-title">ASAP: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills</h4>
+            <p class="pub-authors">Tairan He, Jiawei Gao, Wenli Xiao, Yuanhang Zhang, Zi Wang, Jiashun Wang, Zhengyi Luo, Guanqi He, Nikhil Sobanbabu, <span class="me">Chaoyi Pan</span>, Zeji Yi, Guannan Qu, Kris Kitani, Jessica Hodgins, Linxi &quot;Jim&quot; Fan, Yuke Zhu, Changliu Liu, Guanya Shi</p>
+            <p class="pub-venue">RSS 2025</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> ASAP learns a residual action model from real-world data to correct simulation mismatch, then fine-tunes motion-tracking policies to enable more agile and coordinated humanoid skills.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2502.01143" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/LeCAR-Lab/ASAP" target="_blank" rel="noopener">Code</a>
+              <a href="https://agile.human2humanoid.com/" target="_blank" rel="noopener">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-thumb">
             <img src="assets/pub/tactile.gif" alt="In-Hand Manipulation teaser" loading="lazy">
           </div>
           <div class="pub-info">
             <h4 class="pub-title">In-Hand Manipulation of Unknown Shapes with Tactile Sensing</h4>
             <p class="pub-authors"><span class="me">Chaoyi Pan*</span>, Marion Lepert*, Shenli Yuan, Rika Antonova, Jeannette Bohg</p>
             <p class="pub-venue">IROS 2023</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> Tactile sensing builds an estimate of unknown object shape and pose, while Bayesian optimization balances exploration with reorientation for insertion, reducing exploration time in simulation.</p>
             <div class="pub-links">
               <a href="https://arxiv.org/pdf/2210.13403.pdf" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -269,6 +374,7 @@
             <h4 class="pub-title">Efficient Bimanual Handover and Rearrangement via Symmetry-Aware Actor-Critic Learning</h4>
             <p class="pub-authors">Yunfei Li*, <span class="me">Chaoyi Pan*</span>, Huazhe Xu, Xiaolong Wang, Yi Wu</p>
             <p class="pub-venue">ICRA 2023</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> Symmetry-aware actor-critic learning and object-centric goal relabeling help two arms coordinate multi-object handovers and rearrangement, with demonstrations on real robots and in human-robot collaboration.</p>
             <div class="pub-links">
               <a href="https://drive.google.com/file/d/1ISJ2yjqeuiUgA4wzdI3Gbi_AN5k_RKGP/view?usp=sharing" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/jc-bao/srl" target="_blank" rel="noopener">Code</a>
@@ -285,6 +391,7 @@
             <h4 class="pub-title">Flexible Decentralized Displacement-Based Formation Control: A Multi-Agent Reinforcement Learning Approach</h4>
             <p class="pub-authors"><span class="me">Chaoyi Pan</span>, Yuzi Yan, Zexu Zhang, Yuan Shen</p>
             <p class="pub-venue">EUSIPCO 2022</p>
+            <p class="pub-tldr"><strong>TL;DR:</strong> Multi-agent reinforcement learning with a Hausdorff-distance reward trains a decentralized policy for flexible robot formations without a shared global coordinate system, validated in simulation and on mobile robots.</p>
             <div class="pub-links">
               <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9909889" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/jc-bao/gym-formation" target="_blank" rel="noopener">Code</a>
@@ -373,7 +480,7 @@
           <div class="exp-info">
             <h4 class="exp-org">Amazon Frontier AI and Robotics Lab</h4>
             <p class="exp-role">Research Intern &middot; San Francisco, USA</p>
-            <p class="exp-desc">Working on understanding of action representation and large-scale behavior cloning data collection. Supervised by Prof. Guanya Shi and Prof. Rocky Duan.</p>
+            <p class="exp-desc">Working on robot data curation and annotation for pretraining. Supervised by Guanya Shi and Rocky Duan.</p>
           </div>
         </div>
 
@@ -429,7 +536,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      &copy; 2025 Chaoyi Pan &middot; Carnegie Mellon University
+      &copy; 2026 Chaoyi Pan &middot; Carnegie Mellon University
     </div>
   </footer>
 
